@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <a href="login.html">Iniciar sesión</a>
+    <br>
+    <form action="dashboard.html" method="POST">
+      <h2>Registrate</h2>
+      <input class="inp" name="nombre" type="text" placeholder="Nombre">
+      <input class="inp" name="apellido" type="text" placeholder="Apellido">
+      <br>
+      <input class="inp" name="user" type="text" placeholder="Usuario">
+      <input class="inp" name="pass" type="text" placeholder="Contraseña">
+      <br>
+      <input class="inp" name="email" tpe="email"  style="width: 440px" placeholder="Correo electrónico">
+      <br>
+      <h3>Fecha de nacimiento</h3>
+      <select name="nacimiento[dia]" id="nacimiento">
+        <option value="1">1</option>
+        <option value="2">2</option>  
+        <option value="3">3</option>  
+        <option value="4">4</option>  
+        <option value="5">5</option>  
+      </select>
+      <select name="nacimiento[mes]" id="nacimiento">
+        <option value="enero">enero</option>
+        <option value="febrero">febrero</option>  
+        <option value="marzo">marzo</option>  
+        <option value="abril">abril</option>  
+        <option value="mayo">mayo</option>  
+      </select>
+      <select name="nacimiento[año]" id="nacimiento">
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>  
+        <option value="2012">2012</option>  
+        <option value="2013">2013</option>  
+        <option value="2014">2014</option>  
+      </select>
+      <br>
+      <h3>Género</h3>
+      <label for="mujer">
+        <input class="mb-05" type="radio" name="genero" id="mujer">
+        Mujer
+      </label>
+      <label for="hombre">
+        <input class="mb-05" type="radio" name="genero" id="hombre">
+        Hombre
+      </label>
+      <label for="otro">
+        <input class="mb-05" type="radio" name="genero" id="otro">
+        Otro
+      </label>
+      <br>
+      <br>
+      <button type="submit">Registrar</button>
+    </form>
+  </body>
+</html>  

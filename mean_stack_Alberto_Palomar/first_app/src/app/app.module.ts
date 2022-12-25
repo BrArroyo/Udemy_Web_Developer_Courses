@@ -3,18 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormFirstComponent } from './form-first/form-first.component';
-import {FormsModule} from "@angular/forms"
+import {FormsModule} from "@angular/forms";
+import { PruebaComponent } from './components/prueba/prueba.component'
+import { CourseService } from './course.service';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormFirstComponent
+    FormFirstComponent,
+    PruebaComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [CourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

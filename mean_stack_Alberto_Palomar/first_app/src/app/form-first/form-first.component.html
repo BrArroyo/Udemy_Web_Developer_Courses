@@ -17,3 +17,29 @@
 <button (click)="onDefaultForm()">Default Form</button>
 
 <p>{{ status }}</p>
+
+<div *ngIf="displayPassword; then showPassword; else hidePassword"></div>
+
+<ng-template #showPassword>
+  <p>12345678</p>
+
+</ng-template>
+
+<ng-template #hidePassword>
+  <p>********</p>
+</ng-template>
+
+<div [ngSwitch]="lightStatus">
+  <div *ngSwitchCase="'GREEN'">VERDE</div>
+  <div *ngSwitchCase="'YELLOW'">AMARILLO</div>
+  <div *ngSwitchCase="'RED'">ROJO</div>
+  <div *ngSwitchDefault>ROTO</div>          
+</div>
+
+<div *ngFor="let nombre of names">
+  <p>{{nombre}}</p>
+</div>
+
+<p>{{parentDataToChild}}</p>
+
+<button (click)="onSendEvent()">Enviar Evento</button>

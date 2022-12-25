@@ -1,0 +1,16 @@
+html {
+  background-color: rgb(148, 214, 240)
+}
+
+table {
+  border-collapse: collapse;
+}
+thead{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+td, th {
+  border: 1px solid black;
+  padding: 5px 7px;
+  
+}

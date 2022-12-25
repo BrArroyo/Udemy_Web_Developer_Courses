@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  color:red;
+}
+
+p {
+  color: black;
+}
+
+#navegacion {
+  background: #ccc;
+  padding: 10px;
+}
+
+.otro_contenido > p {
+  color: blue;
+}
