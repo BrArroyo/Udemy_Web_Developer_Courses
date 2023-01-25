@@ -1,4 +1,4 @@
-FROM centos
+FROM nginx
 
 LABEL version="1.0"
 LABEL description="This is a custom image for the beryllium project"
